@@ -1,7 +1,7 @@
 package com.lambdaschool.school.service;
 
 
-import org.springframework.security.core.userdetails.User;
+import com.lambdaschool.school.model.User;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.List;
@@ -25,4 +25,6 @@ public interface UserService
     void deleteUserRole(long userid, long roleid);
 
     void addUserRole(long userid, long roleid);
+
+
 }

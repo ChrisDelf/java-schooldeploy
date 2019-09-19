@@ -3,6 +3,7 @@ package com.lambdaschool.school.repository;
 
 
 import com.lambdaschool.school.model.Role;
+import com.lambdaschool.school.view.JustTheCount;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -10,9 +11,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 public interface RoleRepository extends CrudRepository<Role, Long>
 {
-//    @Query(value = "SELECT COUNT(*) as count FROM userroles WHERE userid = :userid AND roleid = :roleid",
-//           nativeQuery = true)
-//    JustTheCount checkUserRolesCombo(long userid, long roleid);
+    @Query(value = "SELECT COUNT(*) as count FROM userroles WHERE userid = :userid AND roleid = :roleid",
+           nativeQuery = true)
+    JustTheCount checkUserRolesCombo(long userid, long roleid);
 
     @Transactional
     @Modifying
