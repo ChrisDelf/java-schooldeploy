@@ -132,12 +132,11 @@
             <version>3.3.0</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
         <!--        <finalName>${project.artifactId}</finalName>-->
-        <finalName>jrmmba-oauthmin</finalName>
+        <finalName>jondscott21-deployschool</finalName>
 
         <plugins>
             <plugin>

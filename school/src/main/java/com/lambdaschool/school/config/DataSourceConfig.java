@@ -15,7 +15,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
-// is a bean can switch between which database we are using
+
 @Configuration
 public class DataSourceConfig
 {
@@ -45,9 +45,9 @@ public class DataSourceConfig
         String myDBUser = "";
         String myDBPassword = "";
 
-        String dbValue = env.getProperty("local.run.db"); // environment variable
+        String dbValue = env.getProperty("local.run.db");
 
-        if (dbValue.equalsIgnoreCase("POSTGRESQL"))// by default the database is set to h2
+        if (dbValue.equalsIgnoreCase("POSTGRESQL"))
         {
             checkEnvironmentVariable("MYDBHOST");
             checkEnvironmentVariable("MYDBNAME");
@@ -56,13 +56,13 @@ public class DataSourceConfig
 
             if (stop)
             {
-                logger.info("Manually shutting down system");// code to shut the application
+                logger.info("Manually shutting down system");
                 int exitCode = SpringApplication.exit(appContext, (ExitCodeGenerator) () -> 1);
                 System.exit(exitCode);
             }
 
             myUrlString = "jdbc:postgresql://" + System.getenv("MYDBHOST") + ":5432/" + System.getenv("MYDBNAME");
-            myDriverClass = "org.postgresql.Driver";   // since we are running multiple databases we need to change between drivers
+            myDriverClass = "org.postgresql.Driver";
             myDBUser = System.getenv("MYDBUSER");
             myDBPassword = System.getenv("MYDBPASSWORD");
         } else
@@ -73,8 +73,6 @@ public class DataSourceConfig
             myDBUser = "sa";
             myDBPassword = "";
         }
-
-        // you can keep on adding databases
 
         logger.info("Database URL is " + myUrlString);
         return DataSourceBuilder.create()
