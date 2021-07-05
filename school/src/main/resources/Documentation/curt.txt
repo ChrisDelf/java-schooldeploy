@@ -1,0 +1,111 @@
+
+Courses
+curl -X GET \
+  https://java-schooldelpoycd.herokuapp.com/courses/courses \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Authorization: Bearer 16dee58d-9f79-44fd-bd92-63e762151049' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Length: 274' \
+  -H 'Content-Type: application/json' \
+  -H 'Host: java-schooldelpoycd.herokuapp.com' \
+  -H 'Postman-Token: ccaa944a-2156-4aec-825d-721312ff21b5,3eec1543-fa31-4cf1-b9be-4c8691e8bf08' \
+  -H 'User-Agent: PostmanRuntime/7.16.3' \
+  -H 'cache-control: no-cache'
+
+curl -X GET \
+  https://java-schooldelpoycd.herokuapp.com/courses/studcount \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Host: java-schooldelpoycd.herokuapp.com' \
+  -H 'Postman-Token: aa8ab239-02a2-47a9-9919-fcf9a5d857ce,a13eaf60-feb6-447d-b0b2-9c44bb61210f' \
+  -H 'User-Agent: PostmanRuntime/7.16.3' \
+  -H 'cache-control: no-cache'
+
+curl -X DELETE \
+  https://java-schooldelpoycd.herokuapp.com/courses/courses/1 \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Length: ' \
+  -H 'Host: java-schooldelpoycd.herokuapp.com' \
+  -H 'Postman-Token: 8cf9cffb-fff4-417a-a25f-2e436cb296e7,db4b120d-f49a-46dd-9a13-6c91af5e9d8c' \
+  -H 'User-Agent: PostmanRuntime/7.16.3' \
+  -H 'cache-control: no-cache'
+
+Students
+curl -X GET \
+  https://java-schooldelpoycd.herokuapp.com/students/students/ \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Authorization: Bearer 58300163-c277-442b-bf8e-bcd7f3dc1582' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Host: java-schooldelpoycd.herokuapp.com' \
+  -H 'Postman-Token: aa2cc5f0-b6da-40c1-8332-487e8bd51e88,1a9eec33-a83b-4fe7-b1a0-d7febb81fbb8' \
+  -H 'User-Agent: PostmanRuntime/7.16.3' \
+  -H 'cache-control: no-cache'
+
+  curl -X GET \
+    https://java-schooldelpoycd.herokuapp.com/students/Student/1 \
+    -H 'Accept: */*' \
+    -H 'Accept-Encoding: gzip, deflate' \
+    -H 'Cache-Control: no-cache' \
+    -H 'Connection: keep-alive' \
+    -H 'Host: java-schooldelpoycd.herokuapp.com' \
+    -H 'Postman-Token: 1a39514f-8013-42de-b625-1f33a6590b3d,ace18ac0-51e5-4627-84ed-5b79f5641240' \
+    -H 'User-Agent: PostmanRuntime/7.16.3' \
+    -H 'cache-control: no-cache'
+
+    curl -X GET \
+      https://java-schooldelpoycd.herokuapp.com/students/student/namelike/John \
+      -H 'Accept: */*' \
+      -H 'Accept-Encoding: gzip, deflate' \
+      -H 'Authorization: Bearer 58300163-c277-442b-bf8e-bcd7f3dc1582' \
+      -H 'Cache-Control: no-cache' \
+      -H 'Connection: keep-alive' \
+      -H 'Host: java-schooldelpoycd.herokuapp.com' \
+      -H 'Postman-Token: 9fd118ae-2865-4491-8344-02949b0e7835,9d223cc3-aecb-4251-967b-bc060b2943f1' \
+      -H 'User-Agent: PostmanRuntime/7.16.3' \
+      -H 'cache-control: no-cache'
+
+curl -X POST \
+  https://java-schooldelpoycd.herokuapp.com/students/Student \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Length: ' \
+  -H 'Host: java-schooldelpoycd.herokuapp.com' \
+  -H 'Postman-Token: 7ea093dd-2362-472a-9961-1c7ec66e43a6,3737f6e1-f69b-4b95-b1a9-5a9189234d47' \
+  -H 'User-Agent: PostmanRuntime/7.16.3' \
+  -H 'cache-control: no-cache'
+
+  curl -X PUT \
+    https://java-schooldelpoycd.herokuapp.com/students/Student/1 \
+    -H 'Accept: */*' \
+    -H 'Accept-Encoding: gzip, deflate' \
+    -H 'Cache-Control: no-cache' \
+    -H 'Connection: keep-alive' \
+    -H 'Content-Length: ' \
+    -H 'Host: java-schooldelpoycd.herokuapp.com' \
+    -H 'Postman-Token: def85797-2c44-49f6-88c2-79e330cf1bec,b95b54df-9191-49bd-8dc4-1fa883c510aa' \
+    -H 'User-Agent: PostmanRuntime/7.16.3' \
+    -H 'cache-control: no-cache'
+
+    curl -X DELETE \
+      https://java-schooldelpoycd.herokuapp.com/students/Student/2 \
+      -H 'Accept: */*' \
+      -H 'Accept-Encoding: gzip, deflate' \
+      -H 'Authorization: Bearer 58300163-c277-442b-bf8e-bcd7f3dc1582' \
+      -H 'Cache-Control: no-cache' \
+      -H 'Connection: keep-alive' \
+      -H 'Content-Length: ' \
+      -H 'Host: java-schooldelpoycd.herokuapp.com' \
+      -H 'Postman-Token: 16d60087-2bb6-4c6e-b70a-19212eeedeac,29d045a0-ad32-4d1c-8c17-4ac1fe481fe5' \
+      -H 'User-Agent: PostmanRuntime/7.16.3' \
+      -H 'cache-control: no-cache'

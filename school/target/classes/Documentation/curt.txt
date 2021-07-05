@@ -1,0 +1,38 @@
+curl -X GET \
+  https://java-schooldelpoycd.herokuapp.com/courses/courses \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Authorization: Bearer 16dee58d-9f79-44fd-bd92-63e762151049' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Length: 274' \
+  -H 'Content-Type: application/json' \
+  -H 'Host: java-schooldelpoycd.herokuapp.com' \
+  -H 'Postman-Token: ccaa944a-2156-4aec-825d-721312ff21b5,3eec1543-fa31-4cf1-b9be-4c8691e8bf08' \
+  -H 'User-Agent: PostmanRuntime/7.16.3' \
+  -H 'cache-control: no-cache'
+
+curl -X GET \
+  https://java-schooldelpoycd.herokuapp.com/courses/studcount \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Host: java-schooldelpoycd.herokuapp.com' \
+  -H 'Postman-Token: aa8ab239-02a2-47a9-9919-fcf9a5d857ce,a13eaf60-feb6-447d-b0b2-9c44bb61210f' \
+  -H 'User-Agent: PostmanRuntime/7.16.3' \
+  -H 'cache-control: no-cache'
+
+curl -X DELETE \
+  https://java-schooldelpoycd.herokuapp.com/courses/courses/1 \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Length: ' \
+  -H 'Host: java-schooldelpoycd.herokuapp.com' \
+  -H 'Postman-Token: 8cf9cffb-fff4-417a-a25f-2e436cb296e7,db4b120d-f49a-46dd-9a13-6c91af5e9d8c' \
+  -H 'User-Agent: PostmanRuntime/7.16.3' \
+  -H 'cache-control: no-cache'
+
+
